@@ -21,12 +21,6 @@ client.on('ready', () => {
 
 client.on('message', message => {
 	const prefix = "?"
-	if (!message.content.startsWith(prefix) || message.author.bot) return;
-
-	const args = message.content.slice(prefix.length).trim().split(/ +/);
-	const command = args.shift().toLowerCase();
-
-	
 
 	if(message.author.tag === "Rosario#7856")
 	{
@@ -39,6 +33,15 @@ client.on('message', message => {
 			message.channel.send("no scusa yuio non ti arrabiare")
 		}
 	}
+
+	if (!message.content.startsWith(prefix) || message.author.bot) return;
+
+	const args = message.content.slice(prefix.length).trim().split(/ +/);
+	const command = args.shift().toLowerCase();
+
+	
+
+
 
 	if (!client.commands.has(command)) return;
 	client.commands.get(command).execute(message, args);
