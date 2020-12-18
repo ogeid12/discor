@@ -22,7 +22,7 @@ client.on('ready', () => {
 client.on('message', message => {
 	const prefix = "?"
 
-	if(message.author.tag === "Rosario#7856")
+	if(message.author.tag === "forse#6198")
 	{
 		message.reply("ma chi ti caga")
 	}
