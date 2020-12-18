@@ -17,7 +17,7 @@ client.on('ready', () => {
 
 });
 
- 
+
 
 client.on('message', message => {
 	const prefix = "?"
@@ -48,4 +48,5 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 
-client.login(process.env.BOT_TOKEN)
+// client.login(process.env.BOT_TOKEN)
+client.login("Nzg4Nzc3NzA3MDQzNDIyMjM5.X9ocfA.RJHrDCTkdz1clwnpJCZ9droSP60")
