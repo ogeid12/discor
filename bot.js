@@ -35,7 +35,8 @@ client.on('message', message => {
 	}
 
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
-
+	message.react("790528989709467648")
+	
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
 	const command = args.shift().toLowerCase();
 
