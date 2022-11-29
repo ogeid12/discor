@@ -1,6 +1,10 @@
 const Discord = require('discord.js');
 const fs = require("fs")
 
+const dotenv = require("dotenv")
+
+dotenv.config()
+
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 
@@ -52,5 +56,5 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 
-// client.login(process.env.BOT_TOKEN)
-client.login("Nzg4Nzc3NzA3MDQzNDIyMjM5.X9ocfA.RJHrDCTkdz1clwnpJCZ9droSP60")
+client.login(process.env.BOT_TOKEN)
+// client.login("Nzg4Nzc3NzA3MDQzNDIyMjM5.X9ocfA.RJHrDCTkdz1clwnpJCZ9droSP60")
